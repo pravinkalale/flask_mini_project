@@ -1,13 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery - PK_Creation</title>
 </head>
+
 <body>
-    {% include "nav.html" %}
-    <h1>Gallary</h1>
+
+    {% include 'nav.html' %}
+
+    <h1>Our Creative Gallery</h1>
+
+    <p>
+        Explore some of our creative video
+        editing projects.
+    </p>
+
+    <h2>YouTube Video Editing</h2>
+
+    <img src="{{ url_for('static', filename='css/images/youtube.jpg') }}"
+         width="300" alt="YouTube Editing">
+
+    <h2>Instagram Reels</h2>
+
+    <img src="{{ url_for('static', filename='css/images/reels.jpg') }}"
+         width="300" alt="Instagram Reels">
+
+    <h2>Wedding Video Editing</h2>
+
+    <img src="{{ url_for('static', filename='css/images/wedding.jpg') }}"
+         width="300" alt="Wedding Video">
+
+    <h2>Corporate Video Editing</h2>
+
+    <img src="{{ url_for('static', filename='css/images/corporate.jpg') }}"
+         width="300" alt="Corporate Video">
 
 </body>
 </html>
